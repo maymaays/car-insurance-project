@@ -3,7 +3,6 @@ include('connect.php');
 $query = $db->query("SELECT DISTINCT MAKE FROM TBL_MODEL_TYPE ORDER BY MAKE ASC");
 $count = $query->num_rows;
 ?>
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>car insurance</title>
@@ -34,18 +33,30 @@ $count = $query->num_rows;
             <h2 id="lebel_indent">- insurance type -</h2><br>
             <select id="select_type">
                 <option value="type">Type</option>
-                <option>Type 1</option>
-                <option>Type 2</option>
-                <option>Type 3</option>
-                <option>Type 4</option>
+                <option>first class insurance</option>
+                <option>second class insurance</option>
             </select>
 
             <h2 id="lebel_indent_1"><br>- year -</h2><br>
             <select id="select_year">
                 <option value="year">Year</option>
-                <option>YYYYY</option>
-                <option>ZZZZZ</option>
-                <option>WWWWW</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
             </select>
             <h2 id="lebel_indent_2"><br>- make -</h2><br>
             <select id="select_make" name="make">

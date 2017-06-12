@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f7ed80-6f5a-487c-ac15-e78450b3b621" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/find.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/find.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/detail.js" afterPath="$PROJECT_DIR$/js/detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/find.php" afterPath="$PROJECT_DIR$/find.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/find.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,8 +137,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="372" />
-    <option name="y" value="187" />
+    <option name="x" value="303" />
+    <option name="y" value="120" />
     <option name="width" value="929" />
     <option name="height" value="733" />
   </component>
@@ -307,15 +303,15 @@
       <workItem from="1497241350492" duration="865000" />
       <workItem from="1497243561855" duration="2489000" />
       <workItem from="1497250705089" duration="44000" />
-      <workItem from="1497250763934" duration="1192000" />
+      <workItem from="1497250763934" duration="1390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17801000" />
+    <option name="totallyTimeSpent" value="17862000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="372" y="187" width="929" height="733" extended-state="0" />
+    <frame x="303" y="120" width="929" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33799785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -732,7 +728,7 @@
     <entry file="file://$PROJECT_DIR$/find.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>

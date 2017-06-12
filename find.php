@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+include('connect.php');
+$query = $db->query("SELECT DISTINCT MAKE FROM TBL_MODEL_TYPE ORDER BY MAKE ASC");
+$count = $query->num_rows;
+?>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -11,7 +15,6 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="default_ie6.css" rel="stylesheet" type="text/css"/>
 </head>
-
 <body>
 <div id="header-wrapper">
     <div id="header" class="container">
@@ -19,7 +22,7 @@
         <div id="menu">
             <ul>
                 <li class="active"><a href="index.html" accesskey="1" title="">Home</a></li>
-                <li><a href="find.html" accesskey="2" title="">Car Insurance</a></li>
+                <li><a href="find.php" accesskey="2" title="">Car Insurance</a></li>
                 <li><a href="http://www.i-mit.co.th/" accesskey="3" title="">About Us</a></li>
             </ul>
         </div>
@@ -40,19 +43,21 @@
             <h2 id="lebel_indent_1"><br>- year -</h2><br>
             <select id="select_year">
                 <option value="year">Year</option>
-                <option>XXXXX</option>
                 <option>YYYYY</option>
                 <option>ZZZZZ</option>
                 <option>WWWWW</option>
             </select>
-
             <h2 id="lebel_indent_2"><br>- make -</h2><br>
-            <select id="select_make">
-                <option value="make">Make</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+            <select id="select_make" name="make">
+                <option value="">select your make</option>
+                <?php if ($count > 0) {
+                    while ($row = $query->fetch_assoc()) {
+                        echo '<option value="' . $row['MODEL_ID'] . '">' . $row['MAKE'] . '</option>';
+                    }
+                } else {
+                    echo '<option value="">make not available</option>';
+                }
+                ?>
             </select>
 
 
@@ -85,4 +90,3 @@
     <p style="text-align: center" class="align-center">I-MIT Company Limited: 88 PASO Tower, 15th Floor Unit A, Silom
         Road, Suriyawong, Bangrak, Bangkok 10500<br>Tel: 0-2236-1188 Fax: 0-2236-9677 Email: info@i-mit.co.th</p>
 </div>
-</html>

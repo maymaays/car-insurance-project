@@ -9,9 +9,7 @@
   <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
   <link href="css/default.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all"/>
-  <link href="default_ie6.css" rel="stylesheet" type="text/css"/>
   <script type="text/javascript" src="js/cookie.js"></script>
-  <script type="text/javascript" src="js/function.js"></script>
 
 </head>
 <body>
@@ -57,9 +55,10 @@
         <option>2002</option>
         <option>2001</option>
         <option>2000</option>
+        }
       </select>
 
-      <h2 id="lebel_indent_3"><br>- make -</h2>
+      <h2 id="lebel_indent_3"><br>- make -</h2><br>
       <select id="select_make" onclick="get_make()" name="make">
         <?php make_option() ?>
       </select>
@@ -73,8 +72,9 @@
 
       <h2 id="lebel_indent_4"><br>- sub model -</h2><br>
       <select id="select_sub_model">
-        <option value="0">select your model first</option>
+        <?php sub_model(C200) ?>
       </select>
+
       <ul class="actions">
         <li><a href="#" class="button">Find Affordable Car Insurance</a></li>
       </ul>

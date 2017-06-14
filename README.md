@@ -1,6 +1,6 @@
 # car-insurance
 
-## Build Setup
+## BUILD SETUP 
 
 ``` bash
 # install dependencies

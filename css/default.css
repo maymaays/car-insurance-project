@@ -165,7 +165,7 @@
 		letter-spacing: 0.10em;
 		margin-top: 2em;
 		padding: 1.40em 3em;
-		background: #a9ba9d;
+		background: #9e8580;
 		border-radius: 6px;
 		text-decoration: none;
 		font-weight: 700;
@@ -332,7 +332,7 @@
 	
 	#menu .active a
 	{
-		background: #a9ba9d;
+		background:	#9e8580;
 		border-radius: 6px;
 		color: rgba(255,255,255,1);
 		color: #3f0900;
@@ -447,7 +447,7 @@
 	{
 		position: relative;
 		padding: 7em 0em 7em 0em;
-		background: #a9ba9d;
+		background:	#9e8580;
 		background-size: cover;
 		text-align: center;
 	}

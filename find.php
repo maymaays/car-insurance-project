@@ -1,4 +1,4 @@
-<?php include 'get_res.php' ?>
+<?php include 'php/get_res.php' ?>
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -7,11 +7,12 @@
     <meta name="description" content=""/>
     <link rel="icon" href="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/zoom-search-2-icon.png">
     <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"/>
-    <link href="../css/default.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/fonts.css" rel="stylesheet" type="text/css" media="all"/>
-    <script type="text/javascript" src="../js/cookie.js"></script>
+    <link href="css/default.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="js/cookie.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../js/function.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="css/fonts.css"></script>
 </head>
 <body>
 <div id="header-wrapper">
@@ -19,7 +20,7 @@
         <div id="logo">I-MIT ♡<br>we compare, you save</div>
         <div id="menu">
             <ul>
-                <li><a href="../index.html" accesskey="1" title="">Home</a></li>
+                <li><a href="index.html" accesskey="1" title="">Home</a></li>
                 <li class="active"><a href="find.php" accesskey="2" title="">Car Insurance</a></li>
                 <li><a href="http://www.i-mit.co.th/" accesskey="3" title="">About Us</a></li>
             </ul>
@@ -79,7 +80,7 @@
             </form>
 
             <ul class="actions">
-                <li><a href="#" class="button">Find Affordable Car Insurance</a></li>
+                <li><a href="table.html" class="button">Find Affordable Car Insurance</a></li>
             </ul>
         </div>
     </div>

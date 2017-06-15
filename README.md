@@ -1,8 +1,6 @@
 # car-insurance
 
-> A Vue.js project
-
-## Build Setup
+## BUILD SETUP 
 
 ``` bash
 # install dependencies

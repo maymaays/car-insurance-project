@@ -1,4 +1,3 @@
-<?php include 'php/get_res.php' ?>
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -10,9 +9,8 @@
     <link href="css/default.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="js/cookie.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
-    <script type="text/javascript" src="css/fonts.css"></script>
 </head>
 <body>
 <div id="header-wrapper">
@@ -21,7 +19,7 @@
         <div id="menu">
             <ul>
                 <li><a href="index.html" accesskey="1" title="">Home</a></li>
-                <li class="active"><a href="find.php" accesskey="2" title="">Car Insurance</a></li>
+                <li class="active"><a href="find.html" accesskey="2" title="">Car Insurance</a></li>
                 <li><a href="http://www.i-mit.co.th/" accesskey="3" title="">About Us</a></li>
             </ul>
         </div>
@@ -30,13 +28,6 @@
         <div id="banner" class="container">
             <h2>PLEASE COMPLETE YOUR INFORMATION BELOW</h2>
             </br>
-            <h2 id="lebel_indent">- insurance type -</h2><br>
-            <select id="select_type">
-                <option value="type">select your type</option>
-                <option>1st class insurance</option>
-                <option>2nd class insurance</option>
-            </select>
-
             <h2 id="lebel_indent_1"><br>- year -</h2><br>
             <select id="select_year">
                 <option value="year">select your year</option>
@@ -61,20 +52,19 @@
 
 
             <form action="" method="post">
-                <h2 id="lebel_indent_3"><br>- make -</h2><br>
-                <select name="select_make" id="select_make">
+                <h2 id="lebel_indent_2"><br>- make -</h2><br>
+                <select name="select_make" id="select_make" onclick="models()">
                     <option value="" selected="selected" disabled="disabled">select your make</option>
-                    <?php make_option() ?>
                 </select>
 
                 <h2 id="lebel_indent_3"><br>- model -</h2><br>
-                <select id="select_model">
-                    <?php model_option(BMW) ?>
+                <select id="select_model" onclick="sub_model()">
+                    <option value="" selected="selected" disabled="disabled">select your model</option>
                 </select>
 
                 <h2 id="lebel_indent_4"><br>- sub model -</h2><br>
-                <select id="select_sub_model">
-                    <?php sub_model(C200) ?>
+                <select id="select_sub_model" onclick="get_car()">
+                    <option value="" selected="selected" disabled="disabled">select your submodel</option>
                 </select>
 
             </form>

@@ -25,7 +25,7 @@ function insert_customer() {
         if (data.success === "true") {
             console.log('data: ' + (data));
         }
-        console.log("insert customer is success: " + data.success);
+        console.log("insert customer is success: " + data);
     });
 
     request.fail(function (xhr, status, error) {

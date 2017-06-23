@@ -13,7 +13,7 @@ if (!empty($_POST)) {
     } else if ($key == 'output') {
         get_car($_POST['make'], $_POST['model'], $_POST['sub'], $_POST['year']);
     } else if ($key == 'insert_customer') {
-        insert_customer(NULL, $_POST['NAME'], $_POST['EMAIL'], $_POST['MESSAGE']);
+        insert_customer(1000, $_POST['NAME'], $_POST['EMAIL'], $_POST['MESSAGE']);
     }
 }
 
@@ -73,7 +73,7 @@ WHERE C.INSURE_ID = I.URN AND C.MODEL_ID = T.MODEL_ID AND T.MODEL_ID IN (SELECT 
 function insert_customer($CUSTOMER_ID, $CUSTOMER_NAME, $EMAIL, $MESSAGE)
 {
     $db = $GLOBALS['db'];
-    $sql = "INSERT INTO `TBL_CUSTOMER` (`CUSTOMER_ID`, `CUSTOMER_NAME`, `EMAIL`, `MESSAGE`) VALUES ($CUSTOMER_ID, '$CUSTOMER_NAME', '$EMAIL', '$MESSAGE');";
+    $sql = "INSERT INTO `TBL_CUSTOMER` (`CUSTOMER_ID`, `CUSTOMER_NAME`, `EMAIL`, `MESSAGE`) VALUES (DEFAULT, '$CUSTOMER_NAME', '$EMAIL', '$MESSAGE');";
     if (mysqli_query($db, $sql)) {
         echo "records inserted to customer successfully.";
     } else {

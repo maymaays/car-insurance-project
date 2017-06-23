@@ -1,95 +1,41 @@
-html, body {
-    height: 100%;
-}
-
-body {
-    text-align: center;
-@include filter-gradient(#5d4660, #f7eec7, vertical);
-    experimental-support-for-svg: true;
-@include background-image(linear-gradient(top, #5d4660 0 %, #f7eec7 100 %));
-}
-
-.wrap_car {
-    width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    color: #989A8F;
-}
-
-.table_car {
-    background-color: #ffffff;
-    height: 600px;
-    width: 100%;
-    margin-top: 50px;
-}
-
-ul li {
-    float: left;
-    width: 265px;
-    text-align: center;
-    border-left: 1px solid #DDDCD8;
-}
-
-.top_car {
-    background-color: #EAE9E4;
-    height: 80px;
-}
-
-h1 {
-    padding-top: 20px;
-}
-
-.circle_car {
-    width: 90px;
-    height: 90px;
-    border-radius: 90px;
-    font-size: 20px;
-    color: #fff;
-    line-height: 90px;
-    text-align: center;
-    background: #989A8F;
-    margin-left: 85px;
-    margin-top: 10px;
-}
-
-.bottom_car {
-    margin-top: 70px;
-}
-
-p {
-    font-size: 16px;
-    padding: 5px;
-}
-
-.span_table {
-    font-weight: bold;
-}
-
-.sign_table {
-    margin-top: 30px;
-}
-
-.button_car {
-    border: 1px solid #989A8F;
-    padding: 10px 40px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    background: #9e8580;
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: none;
-    vertical-align: middle;
-}
-
 .bt {
-    background: #9e8580;
-    height: 30px;
-    width: 160px;
-    vertical-align: middle;
+    background: rgba(151, 131, 126, 0.72);
     margin: 10px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-align: center;
+    line-height: 50px;
+}
+
+.bt:hover {
+    background-color: #cfb6b4;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #9e8580;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #8c8c8c;
 }
 
 

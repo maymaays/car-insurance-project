@@ -1,5 +1,4 @@
 window.onload = make();
-var store = this.value;
 
 function make() {
     console.log('test make ♡');
@@ -16,7 +15,7 @@ function make() {
             $make.empty();
             $make.append('<option value="">select your make</option>');
             for (var i = 0; i < car_make.length; i++) {
-                 $make.append('<option  value='+ car_make[i].carid +'>' + car_make[i].make + '</option>');
+                $make.append('<option  value=' + car_make[i].carid + '>' + car_make[i].make + '</option>');
                 store = car_make.value;
             }
             $make.change();
@@ -40,7 +39,7 @@ function models() {
             $model.empty();
             $model.append('<option value="">select your model</option>');
             for (var i = 0; i < car_model.length; i++) {
-                $model.append('<option  value='+ car_model[i].carid +'>' + car_model[i].model + '</option>');
+                $model.append('<option  value=' + car_model[i].carid + '>' + car_model[i].model + '</option>');
             }
             $model.change();
         }
@@ -63,7 +62,7 @@ function sub_model() {
             $sub.empty();
             $sub.append('<option value="">select your submodel</option>');
             for (var i = 0; i < car_sub.length; i++) {
-                $sub.append('<option  value='+ car_sub[i].carid +'>' + car_sub[i].submodel + '</option>');
+                $sub.append('<option  value=' + car_sub[i].carid + '>' + car_sub[i].submodel + '</option>');
             }
             $sub.change();
         }

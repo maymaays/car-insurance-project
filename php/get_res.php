@@ -12,6 +12,8 @@ if (!empty($_POST)) {
         sub_model($_POST['sub']);
     } else if ($key == 'output') {
         get_car($_POST['make'], $_POST['model'], $_POST['sub'], $_POST['year']);
+    } else if ($key == 'insert_customer') {
+        insert_customer(NULL, $_POST['NAME'], $_POST['EMAIL'], $_POST['MESSAGE']);
     }
 }
 
@@ -60,10 +62,21 @@ WHERE C.INSURE_ID = I.URN AND C.MODEL_ID = T.MODEL_ID AND T.MODEL_ID IN (SELECT 
     $res = mysqli_query($db, $sql);
     $output = array();
     while ($row = mysqli_fetch_assoc($res)) {
-        $output[] = array('cov_id' => $row['COVERAGE_ID'], 'make' => $row['MAKE'], 'model' => $row['MODEL'],
-            'sub' => $row['SUB_MODEL'], 'insure' => $row['INSURE_COMPANY'], 'year' => $row['REGISTER_YEAR'],
-            'min' => $row['COVERAGE_MIN'], 'max' => $row['COVERAGE_MAX'], 'premiums' => $row['PREMIUMS'],
+        $output[] = array('cov_id' => $row['COVERAGE_ID'], 'make_car' => $row['MAKE'], 'model' => $row['MODEL'],
+            'submodel' => $row['SUB_MODEL'], 'insure' => $row['INSURE_COMPANY'], 'year_car' => $row['REGISTER_YEAR'],
+            'min_car' => $row['COVERAGE_MIN'], 'max_car' => $row['COVERAGE_MAX'], 'premi' => $row['PREMIUMS'],
             'min_2' => $row['COVERAGE_MIN_2'], 'max_2' => $row['COVERAGE_MAX_2']);
     }
     echo json_encode($output);
+}
+
+function insert_customer($CUSTOMER_ID, $CUSTOMER_NAME, $EMAIL, $MESSAGE)
+{
+    $db = $GLOBALS['db'];
+    $sql = "INSERT INTO `TBL_CUSTOMER` (`CUSTOMER_ID`, `CUSTOMER_NAME`, `EMAIL`, `MESSAGE`) VALUES ($CUSTOMER_ID, '$CUSTOMER_NAME', '$EMAIL', '$MESSAGE');";
+    if (mysqli_query($db, $sql)) {
+        echo "records inserted to customer successfully.";
+    } else {
+        echo "error: could not able to execute $sql. " . mysqli_error($db);
+    }
 }

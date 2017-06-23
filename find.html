@@ -11,6 +11,8 @@
     <script type="text/javascript" src="js/cookie.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/about_us.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div id="header-wrapper">
@@ -18,17 +20,17 @@
         <div id="logo">I-MIT ♡<br>we compare, you save</div>
         <div id="menu">
             <ul>
-                <li><a href="index.html" accesskey="1" title="">Home</a></li>
-                <li class="active"><a href="find.html" accesskey="2" title="">Car Insurance</a></li>
-                <li><a href="http://www.i-mit.co.th/" accesskey="3" title="">About Us</a></li>
+                <li class="bt" id="home"><a href="index.html" accesskey="1" title="">home</a></li>
+                <li class="bt"><a id="title" href="find.html" accesskey="2" title="">car insurance</a></li>
+                <li class="bt"><a id="about" href="about.html" accesskey="3" title="">about us</a></li>
             </ul>
         </div>
     </div>
     <div id="banner-wrapper">
         <div id="banner" class="container">
-            <h2>PLEASE COMPLETE YOUR INFORMATION BELOW</h2>
+            <h1>PLEASE COMPLETE YOUR INFORMATION BELOW</h1>
             </br>
-            <h2 id="lebel_indent_1"><br>- year -</h2><br>
+            <h2 id="lebel_indent_1"><br>- YEAR -</h2><br>
             <select id="select_year">
                 <option value="year">select your year</option>
                 <option>2017</option>
@@ -52,20 +54,20 @@
 
 
             <form action="" method="post">
-                <h2 id="lebel_indent_2"><br>- make -</h2><br>
+                <h2 id="lebel_indent_2"><br>- MAKE -</h2><br>
                 <select name="select_make" id="select_make" onclick="models()">
                     <option value="" selected="selected" disabled="disabled">select your make</option>
                 </select>
 
-                <h2 id="lebel_indent_3"><br>- model -</h2><br>
+                <h2 id="lebel_indent_3"><br>- MODEL -</h2><br>
                 <select id="select_model" onclick="sub_model()">
                     <option value="" selected="selected" disabled="disabled">select your model</option>
                 </select>
 
-                <h2 id="lebel_indent_4"><br>- sub model -</h2><br>
+                <h2 id="lebel_indent_4"><br>- SUB MODEL -</h2><br>
                 <select id="select_sub_model" onclick="get_car()">
                     <option value="" selected="selected" disabled="disabled">select your submodel</option>
-                </select>
+                </select><br><br>
 
             </form>
 
@@ -76,9 +78,11 @@
     </div>
 </div>
 </body>
-<div id="footer" class="container">
-    <h3 style="text-align: center"><br>CONTACT US</h3>
-    <p style="text-align: center" class="align-center">I-MIT Company Limited: 88 PASO Tower, 15th Floor Unit A, Silom
-        Road, Suriyawong, Bangrak, Bangkok 10500<br>Tel: 0-2236-1188 Fax: 0-2236-9677 Email: info@i-mit.co.th</p>
-</div>
+<div id="footer" class="container" style="align-content: center">
+    <h2 style="text-align: center"><br>CONTACT US<br><br>
+        <a href="https://www.facebook.com/pages/บริษัท-ไอยมิตร-จำกัด/1693592014221240" class="fa fa-facebook"></a>
+        <a href="http://www.i-mit.co.th" class="fa fa-home"></a>
+        <div id="popup" href="#" onclick="myFunction()" class="fa fa-address-book"><span class="popuptext" id="myPopup">I-MIT COMPANY LIMITED<br>02-236-1188</span></div><br><br></h2>
+    <h3 style="text-align: center" class="align-center">I-MIT Company Limited: 88 PASO Tower, 15th Floor Unit A, Silom
+        Road, Suriyawong, Bangrak, Bangkok 10500<br>Tel: 0-2236-1188 Fax: 0-2236-9677 Email: info@i-mit.co.th</h3></div><br><br>
 </html>

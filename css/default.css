@@ -167,10 +167,10 @@
 		padding: 1.40em 3em;
 		background: #9e8580;
 		border-radius: 6px;
-		text-decoration: none;
 		font-weight: 700;
 		font-size: 1em;
-		color: #3f0900;
+		color: white;
+
 	}
 	
 	.button-alt
@@ -324,6 +324,7 @@
 		text-transform: uppercase;
 		font-size: 0.8em;
 		color: rgba(255,255,255,0.80);
+		text-shadow: #989A8F;
 	}
 	
 	#menu li:hover a, #menu li.active a, #menu li.active span
